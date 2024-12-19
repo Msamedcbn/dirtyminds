@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/animations.css';
+
+:root {
+  /* Doğruluk için mavi tonları */
+  --truth-primary: #3b82f6;
+  --truth-secondary: #2563eb;
+  
+  /* Cesaret için sarı/turuncu tonları */
+  --dare-primary: #f59e0b;
+  --dare-secondary: #d97706;
+  
+  /* Kategori renkleri */
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --orange-500: #f97316;
+  --orange-600: #ea580c;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+}
+
+/* Tailwind safelist için gerekli sınıflar */
+@layer utilities {
+  .bg-green-500 { background-color: var(--green-500); }
+  .bg-green-600 { background-color: var(--green-600); }
+  .bg-orange-500 { background-color: var(--orange-500); }
+  .bg-orange-600 { background-color: var(--orange-600); }
+  .bg-red-500 { background-color: var(--red-500); }
+  .bg-red-600 { background-color: var(--red-600); }
+  
+  .text-green-500 { color: var(--green-500); }
+  .text-green-600 { color: var(--green-600); }
+  .text-orange-500 { color: var(--orange-500); }
+  .text-orange-600 { color: var(--orange-600); }
+  .text-red-500 { color: var(--red-500); }
+  .text-red-600 { color: var(--red-600); }
+}
